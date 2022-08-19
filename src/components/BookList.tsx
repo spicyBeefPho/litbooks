@@ -5,8 +5,9 @@ import BookCollection from "./BookCollection";
 const BookList = () => {
   // Fetcher Function
   const getBookList = async () => {
+    const API_Key = process.env.NEXT_PUBLIC_API_KEY;
     const res = await fetch(
-      'https://www.googleapis.com/books/v1/volumes?q=inauthor:"kurt+vonnegut"&key=AIzaSyAQ-68r4o5A3NH6u086qg_laaemRSrX_8A'
+      `https://www.googleapis.com/books/v1/volumes?q=inauthor:"kurt+vonnegut"&key=${API_Key}`
     );
     return res.json();
   };

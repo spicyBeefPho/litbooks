@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main className="flex flex-row flex-wrap gap-5">
+        <main className="flex flex-row flex-wrap gap-5 bg-[#24404D]">
           <BookList />
         </main>
       </Layout>

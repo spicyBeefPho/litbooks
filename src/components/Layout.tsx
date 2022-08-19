@@ -139,8 +139,8 @@ const Layout = ({ children, title = "Search Google Books API" }: Props) => {
         {/* Static sidebar for desktop */}
         <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex-1 flex flex-col min-h-0 bg-gray-800">
-            <div className="flex items-center h-16 flex-shrink-0 px-4 bg-gray-900">
+          <div className="flex-1 flex flex-col min-h-0 bg-[#24404D]">
+            <div className="flex items-center h-16 flex-shrink-0 px-4 bg-[#24404D]">
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500"
@@ -177,7 +177,7 @@ const Layout = ({ children, title = "Search Google Books API" }: Props) => {
           </div>
         </div>
         <div className="md:pl-64 flex flex-col">
-          <div className="sticky top-0 z-10 flex-shrink-0 flex h-16 bg-white shadow">
+          <div className="sticky top-0 z-10 flex-shrink-0 flex h-16 bg-[#24404D] shadow">
             <button
               type="button"
               className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
@@ -192,7 +192,7 @@ const Layout = ({ children, title = "Search Google Books API" }: Props) => {
                   <label htmlFor="search-field" className="sr-only">
                     Search
                   </label>
-                  <div className="relative w-full text-gray-400 focus-within:text-gray-600">
+                  <div className="relative w-full text-gray-400 focus-within:text-gray-600 bg-red-900">
                     <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none">
                       <SearchIcon className="h-5 w-5" aria-hidden="true" />
                     </div>
@@ -209,7 +209,7 @@ const Layout = ({ children, title = "Search Google Books API" }: Props) => {
               <div className="ml-4 flex items-center md:ml-6">
                 <button
                   type="button"
-                  className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="bg-[#24404D] p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -262,7 +262,7 @@ const Layout = ({ children, title = "Search Google Books API" }: Props) => {
           <main className="flex-1">
             <div className="py-6">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                <h1 className="text-2xl font-semibold text-gray-900">
+                <h1 className="text-2xl font-semibold bg-[#24404D]">
                   Dashboard
                 </h1>
               </div>
