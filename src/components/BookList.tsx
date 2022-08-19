@@ -28,7 +28,7 @@ const BookList = () => {
     <>
       {books.items.map((bookList: { volumeInfo: any }) => (
         <li className="flex flex-col max-w-xs min-h-[340px]">
-          <div className="max-w-xs p-12 bg-[#2F313E] rounded-md">
+          <div className="card max-w-xs p-12 rounded-md drop-shadow-sm">
             <img
               src={bookList.volumeInfo.imageLinks.thumbnail}
               alt=""
