@@ -27,15 +27,18 @@ const BookList = () => {
   return (
     <>
       {books.items.map((bookList: { volumeInfo: any }) => (
-        <li className="flex flex-col max-w-xs">
-          <div className="max-w-xs p-12 bg-gray-200">
-            <img src={bookList.volumeInfo.imageLinks.thumbnail} alt="" />
+        <li className="flex flex-col max-w-xs min-h-[340px]">
+          <div className="max-w-xs p-12 bg-[#2F313E] rounded-md">
+            <img
+              src={bookList.volumeInfo.imageLinks.thumbnail}
+              alt=""
+              className="min-h-40 max-h-40 rounded-sm"
+            />
             <h1 className="max-w-xs">{bookList.volumeInfo.title}</h1>
             <h2>{bookList.volumeInfo.authors}</h2>
           </div>
         </li>
       ))}
-      <ul></ul>
     </>
   );
 };
